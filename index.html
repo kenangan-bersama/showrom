@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Showroom Mobil Sultan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><i class="fas fa-car"></i> Showroom Sultan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mobil">Koleksi Mobil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonial">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://wa.me/6281234567890" target="_blank">Kontak</a></li>
+        <li class="nav-item"><a class="btn btn-light btn-sm ms-2" href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Selamat Datang di Showroom Sultan</h1>
+    <p class="lead mb-4">Temukan mobil impianmu di sini!</p>
+    <a href="#mobil" class="btn btn-light btn-lg shadow-sm">Lihat Koleksi Mobil</a>
+  </div>
+</section>
+
+<div id="mobilCarousel" class="carousel slide mt-4 container" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/images-2.png" class="d-block w-100" alt="Avanza" />
+    </div>
+    <div class="carousel-item">
+      <img src="images/images-1.jpeg" class="d-block w-100" alt="Triton" />
+    </div>
+    <div class="carousel-item">
+      <img src="images/civic-1.jpg" class="d-block w-100" alt="Civic" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mobilCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mobilCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Cari mobil favoritmu..." />
+    </div>
+  </div>
+</div>
+
+<section id="mobil" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Koleksi Mobil Unggulan</h2>
+    <div class="row g-4" id="mobilList">
+      <div class="col-md-4">
+        <div class="card text-center p-3">
+          <img src="images/images-2.png" class="card-img-top" alt="Avanza" />
+          <div class="card-body">
+            <h5 class="card-title">Toyota Avanza</h5>
+            <p class="card-text">Mobil keluarga nyaman dan irit bahan bakar.</p>
+            <a href="#" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-3">
+          <img src="images/images-1.jpeg" class="card-img-top" alt="Triton" />
+          <div class="card-body">
+            <h5 class="card-title">Mitsubishi Triton</h5>
+            <p class="card-text">Tangguh di segala medan dan cocok untuk usaha.</p>
+            <a href="#" class="btn btn-outline-success">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-3">
+          <img src="images/civic-1.jpg" class="card-img-top" alt="Civic Turbo" />
+          <div class="card-body">
+            <h5 class="card-title">Honda Civic Turbo</h5>
+            <p class="card-text">Performa tinggi dengan desain sporty & elegan.</p>
+            <a href="#" class="btn btn-outline-danger">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonial" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mb-5">Apa Kata Mereka?</h3>
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text fst-italic">“Pelayanan showroom Sultan cepat dan ramah. Mobilnya juga oke banget!”</p>
+            <h6 class="mt-4 mb-0 fw-bold">- Rina, Jakarta</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text fst-italic">“Pilihan mobil lengkap, harga bersaing, dan proses beli gampang.”</p>
+            <h6 class="mt-4 mb-0 fw-bold">- Agus, Bandung</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text fst-italic">“Rekomendasi terbaik untuk yang ingin mobil baru dengan budget pas.”</p>
+            <h6 class="mt-4 mb-0 fw-bold">- Dwi, Surabaya</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Tombol WhatsApp Floating -->
+<a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-float" aria-label="Chat via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Tombol Kembali ke Atas -->
+<button id="toTopBtn" aria-label="Kembali ke atas">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- About -->
+      <div class="col-12 col-md-4">
+        <h4>Showroom Sultan</h4>
+        <p>Your trusted car showroom since 2020. Quality cars with great prices and excellent services.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Inventory</a></li>
+          <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-6 col-md-3">
+        <h5>Contact Us</h5>
+        <p class="mb-1">Email: <a href="mailto:info@showroomsultan.com" class="text-decoration-none text-light">info@showroomsultan.com</a></p>
+        <p class="mb-1">Phone: <a href="tel:+62123456789" class="text-decoration-none text-light">+62 123-4567-89</a></p>
+        <p>Address: Jl. Merdeka No.123, Jakarta, Indonesia</p>
+        <div class="d-flex gap-3 fs-4">
+          <a href="https://github.com/sultanhasibuan" target="_blank" class="text-light" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/sultanhasibuan" target="_blank" class="text-light" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/628123456789" target="_blank" class="text-light" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-12 col-md-3">
+        <h5>Subscribe to Newsletter</h5>
+        <form id="newsletterForm" class="d-flex" role="search" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" class="form-control me-2" placeholder="Your email address" required>
+          <button class="btn btn-success" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-light mt-4" />
+
+    <p class="text-center mb-0">&copy; 2025 Showroom Sultan. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Tombol kembali ke atas
+  const toTopBtn = document.getElementById('toTopBtn');
+  window.onscroll = () => {
+    if (document.documentElement.scrollTop > 200) {
+      toTopBtn.style.display = "flex";
+    } else {
+      toTopBtn.style.display = "none";
+    }
+  };
+  toTopBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Fitur pencarian sederhana
+  const searchInput = document.getElementById('searchInput');
+  const mobilList = document.getElementById('mobilList');
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    const cards = mobilList.getElementsByClassName('col-md-4');
+    Array.from(cards).forEach(card => {
+      const title = card.querySelector('.card-title').textContent.toLowerCase();
+      if (title.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

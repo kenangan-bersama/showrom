@@ -1,0 +1,231 @@
+/* ------------------------------------------
+   Global Styles
+------------------------------------------ */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2f2f2f;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* ------------------------------------------
+   Navbar
+------------------------------------------ */
+nav.navbar {
+  background-color: #121212 !important;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link,
+nav.navbar .btn-light {
+  color: #ccc !important;
+}
+
+nav.navbar .nav-link.active,
+nav.navbar .nav-link:hover,
+nav.navbar .btn-light:hover {
+  color: #ffffff !important;
+}
+
+/* ------------------------------------------
+   Hero Section
+------------------------------------------ */
+section.hero {
+  background-color: #4a4a4a;
+  padding: 100px 0 60px;
+  text-align: center;
+  color: #f0f0f0;
+  /* Jika ingin background image + gradient, uncomment: */
+  /* background: linear-gradient(135deg, rgba(13,110,253,0.9), rgba(13,202,240,0.9)), url('https://via.placeholder.com/1400x600') no-repeat center/cover; */
+}
+
+section.hero .btn-light {
+  background-color: #d3d3d3;
+  color: #2f2f2f;
+  border: none;
+}
+
+section.hero .btn-light:hover {
+  background-color: #b0b0b0;
+  color: #121212;
+}
+
+/* ------------------------------------------
+   Carousel
+------------------------------------------ */
+#mobilCarousel {
+  background-color: #121212;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#mobilCarousel .carousel-control-prev-icon,
+#mobilCarousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-inner img {
+  border-radius: 8px;
+}
+
+/* ------------------------------------------
+   Cards
+------------------------------------------ */
+.card {
+  background-color: #3a3a3a;
+  color: #ddd;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.15);
+}
+
+/* Button Outline Styles */
+.card .btn-outline-primary {
+  color: #a0c8ff;
+  border-color: #a0c8ff;
+}
+
+.card .btn-outline-primary:hover {
+  background-color: #a0c8ff;
+  color: #121212;
+}
+
+.card .btn-outline-success {
+  color: #90ee90;
+  border-color: #90ee90;
+}
+
+.card .btn-outline-success:hover {
+  background-color: #90ee90;
+  color: #121212;
+}
+
+.card .btn-outline-danger {
+  color: #f08080;
+  border-color: #f08080;
+}
+
+.card .btn-outline-danger:hover {
+  background-color: #f08080;
+  color: #121212;
+}
+
+/* ------------------------------------------
+   Search Input
+------------------------------------------ */
+#searchInput {
+  background-color: #4a4a4a;
+  border: 1px solid #666;
+  color: #eee;
+}
+
+#searchInput::placeholder {
+  color: #bbb;
+}
+
+#searchInput:focus {
+  background-color: #6a6a6a;
+  color: #fff;
+  border-color: #a0c8ff;
+  box-shadow: 0 0 5px #a0c8ff;
+}
+/* ------------------------------------------
+   Buttons: Kembali ke Atas & WhatsApp
+------------------------------------------ */
+/* ------------------------------------------
+   Buttons: Scroll to Top & WhatsApp Floating
+------------------------------------------ */
+
+/* Tombol Scroll to Top */
+#toTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background: linear-gradient(135deg, #80b3ff, #a0c8ff);
+  border: none;
+  color: #121212;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(160, 200, 255, 0.7);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  z-index: 1100;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+#toTopBtn:hover {
+  background: linear-gradient(135deg, #709ee0, #5b7fc1);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(80, 120, 200, 0.8);
+}
+
+/* Tombol WhatsApp Floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  background-color: #25d366;
+  color: white;
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  animation: pulseWhatsapp 2.5s infinite;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5b;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(30, 190, 91, 0.8);
+}
+
+/* Pulse animation for WhatsApp button */
+@keyframes pulseWhatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  #toTopBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+  .whatsapp-float {
+    bottom: 80px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+}
